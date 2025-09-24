@@ -22,16 +22,17 @@
     <header class="judul">Student Profile</header>
 
     <section class="hero">
-            <div class="profile-text">
-                <h3>Welcome to my world!</h3>
-                <h2>I Wayan Juana Satya Adinata</h2>
-                <p>A passionate tech enthusiast from the beautiful highlands of Bangli. 
-                  Currently exploring the endless possibilities of Information Technology 
-                  at Udayana University, where code meets creativity.
-                </p>
-            </div>
-        </section>
-        
+      <div class="profile-text">
+        <h3>Welcome to my world!</h3>
+        <h2>I Wayan Juana Satya Adinata</h2>
+        <p>
+          A passionate tech enthusiast from the beautiful highlands of Bangli.
+          Currently exploring the endless possibilities of Information
+          Technology at Udayana University, where code meets creativity.
+        </p>
+      </div>
+    </section>
+
     <section id="biodata" class="Biodata">
       <h2>Profile</h2>
       <img
@@ -75,7 +76,8 @@
       <h2>Education History</h2>
       <ul>
         <li>
-          <b>2024 - Present:</b> Udayana University - Information Technology (Bachelor's Degree)
+          <b>2024 - Present:</b> Udayana University - Information Technology
+          (Bachelor's Degree)
         </li>
         <li><b>2021 - 2024:</b> SMA Negeri 1 Tampaksiring - Science Track</li>
         <li><b>2018 - 2021:</b> SMP Negeri 1 Susut</li>
@@ -97,43 +99,86 @@
     <section id="organisasi">
       <h2>Organization Experience</h2>
       <table border="1" cellpadding="10" cellspacing="0" width="100%">
-  <thead>
-    <tr>
-      <th>Year</th>
-      <th>Organization/Committee</th>
-      <th>Position</th>
-      <th>Job Description</th>
-    </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>2024</td>
-          <td>ITCC Committee (Information Technology Creative Competition)</td>
-          <td>Security & Equipment Division</td>
-      <td>Managing event security, ensuring equipment availability and functionality, and supporting technical aspects of the event.</td>
-    </tr>
-    <tr>
-      <td>2024</td>
-      <td>SPORTI Committee</td>
-      <td>Security & Equipment Division</td>
-      <td>Maintaining activity security, preparing sports and arts equipment, and assisting with field technical support.</td>
-    </tr>
-    <tr>
-      <td>2022 - 2023</td>
-      <td>SMA Negeri 1 Tampaksiring Anniversary Committee</td>
-      <td>Publication & Documentation</td>
-      <td>Documenting activities, creating poster designs, and managing event publications.</td>
-    </tr>
-    
-</tbody>
-
-</table>
-
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Organization/Committee</th>
+            <th>Position</th>
+            <th>Job Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2024</td>
+            <td>
+              ITCC Committee (Information Technology Creative Competition)
+            </td>
+            <td>Security & Equipment Division</td>
+            <td>
+              Managing event security, ensuring equipment availability and
+              functionality, and supporting technical aspects of the event.
+            </td>
+          </tr>
+          <tr>
+            <td>2024</td>
+            <td>SPORTI Committee</td>
+            <td>Security & Equipment Division</td>
+            <td>
+              Maintaining activity security, preparing sports and arts
+              equipment, and assisting with field technical support.
+            </td>
+          </tr>
+          <tr>
+            <td>2022 - 2023</td>
+            <td>SMA Negeri 1 Tampaksiring Anniversary Committee</td>
+            <td>Publication & Documentation</td>
+            <td>
+              Documenting activities, creating poster designs, and managing
+              event publications.
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <!-- Contact Form -->
     <section id="kontak">
       <h2>Contact Me</h2>
+
+      <form>
+        <table>
+          <tr>
+            <td><label for="nama">Name:</label></td>
+            <td><input type="text" id="nama" name="nama" required /></td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" id="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td><label for="pesan">Message:</label></td>
+            <td>
+              <textarea
+                id="pesan"
+                name="pesan"
+                rows="5"
+                cols="30"
+                required
+              ></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <input
+                type="submit"
+                value="Kirim Pesan"
+                onclick="alert(`PESAN TERKIRIM`)"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
 
       <a href="https://wa.me/6288888888">
         <p>Click to contact me via WhatsApp</p>
